@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Alvaro Sorto -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Technology Background Video</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        .color-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        .info {
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="main-section">
+
+        <header>
+            <h1>Computer Technology</h1>
+            <p>Exploring the Future of Cybersecurity</p>
+        </header>
+
+        <video autoplay loop muted>
+            <source src="technology.mp4" type="video/mp4">
+        </video>
+
+        <div class="color-overlay"></div>
+
+    </section>
+
+    <section class="info">
+        <h2>Welcome</h2>
+        <p>
+            Learn more about computer technology
+            and the importance of cybersecurity.
+        </p>
+    </section>
+
+</body>
+
+</html>
